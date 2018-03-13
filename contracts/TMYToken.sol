@@ -1,6 +1,6 @@
-pragma solidity 0.4.21;
+pragma solidity ^0.4.19;
 
-import 'zeppelin-solidity/contracts/token/MintableToken.sol';
+import 'zeppelin-solidity/contracts/token/ERC20/MintableToken.sol';
 
 contract TMYToken is MintableToken {
     string public name = "Timoney";
