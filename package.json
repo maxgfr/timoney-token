@@ -1,7 +1,7 @@
 {
   "name": "timoney-token",
   "version": "1.0.0",
-  "description": "",
+  "description": "Timoney token",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
@@ -9,9 +9,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "github.com/maxgfr/timoney-token"
+  },
+  "keywords": [
+    "ico"
+  ],
+  "author": "Maxime Golfier",
   "dependencies": {
     "zeppelin-solidity": "1.7.0"
   }
