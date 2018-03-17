@@ -8,7 +8,7 @@ contract TMYToken is BurnableToken, Ownable {
     string public constant name = "TimeMoney";
     string public constant symbol = "TMY";
     uint public constant decimals = 18;
-    uint256 public constant initialSupply = 900000000 * (10 ** uint256(decimals));
+    uint256 public constant initialSupply = 300000000 * (10 ** uint256(decimals));
 
     // Constructor
     function TMYToken() {

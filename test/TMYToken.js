@@ -57,7 +57,7 @@ var printBalance = async function() {
     balance = await token.balanceOf.call(Crowdsale.address);
     console.log("Crowdsale balance: ", web3.fromWei(crowdsaleBalance, "ether").toString(), " ETHER / ", web3.fromWei(balance.valueOf(), "ether").toString(), " TMYT");
     balance = await token.balanceOf.call(wallet);
-    console.log("wallet balance: ", web3.fromWei(walletBalance, "ether").toString(), " ETHER / ", web3.fromWei(balance.valueOf(), "ether").toString(), " TMYT");
+    console.log("Wallet balance: ", web3.fromWei(walletBalance, "ether").toString(), " ETHER / ", web3.fromWei(balance.valueOf(), "ether").toString(), " TMYT");
 }
 
 contract('ICO', function(accounts) {
@@ -71,14 +71,14 @@ contract('ICO', function(accounts) {
         return balance;
     }
 
-    it("should remain "+ preIcoTokensSold +" TMYToken in the first account", async function() {
+    it("Should remain "+ preIcoTokensSold +" TMYToken in the first account", async function() {
         await printBalance();
         let token = await TMYToken.deployed();
         let balance = await token.balanceOf.call(owner);
         assert.equal(web3.fromWei(balance.valueOf()), preIcoTokensSold, preIcoTokensSold + " wasn't in the first account");
     });
 
-    it("should have "+ maxCap +" TMYToken in Crowdsale contract", async function() {
+    it("Should have "+ maxCap +" TMYToken in Crowdsale contract", async function() {
         let token = await TMYToken.deployed();
         let balance = await token.balanceOf.call(Crowdsale.address);
         assert.equal(web3.fromWei(balance.valueOf()), maxCap, maxCap + " wasn't in the Crowdsale account")
