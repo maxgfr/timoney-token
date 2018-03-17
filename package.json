@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Maxime Golfier",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -18,8 +18,12 @@
   "keywords": [
     "ico"
   ],
-  "author": "Maxime Golfier",
   "dependencies": {
     "zeppelin-solidity": "1.7.0"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "ethereumjs-wallet": "^0.6.0",
+    "truffle-wallet-provider": "0.0.5"
   }
 }

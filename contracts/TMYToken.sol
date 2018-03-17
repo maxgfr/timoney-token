@@ -1,9 +1,19 @@
-pragma solidity ^0.4.19;
+//ERC20 Token
+pragma solidity 0.4.15;
 
-import 'zeppelin-solidity/contracts/token/ERC20/MintableToken.sol';
+import './BurnableToken.sol';
+import './Ownable.sol';
 
-contract TMYToken is MintableToken {
-    string public name = "Timoney";
-    string public symbol = "TMY";
-    uint8 public decimals = 18;
+contract TMYToken is BurnableToken, Ownable {
+
+    string public constant name = "TimeMoney";
+    string public constant symbol = "TMY";
+    uint public constant decimals = 18;
+    uint256 public constant initialSupply = 900000000 * (10 ** uint256(decimals));
+
+    // Constructor
+    function CJToken() {
+        totalSupply = initialSupply;
+        balances[msg.sender] = initialSupply; // Send all tokens to owner
+    }
 }
