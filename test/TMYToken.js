@@ -169,7 +169,7 @@ contract('ICO', function(accounts) {
 
 
   it("Should not Buy tokens after ICO end date", async function() {
-      await timeTravel(86400 * 40); // 40 day later
+      await timeTravel(86400 * 200); // 200 days later
       await mineBlock(); // workaround for https://github.com/ethereumjs/testrpc/issues/336
       try {
           let balance = await investEther(1, buyer);

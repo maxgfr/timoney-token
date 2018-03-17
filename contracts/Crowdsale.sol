@@ -36,7 +36,7 @@ contract Crowdsale is Ownable {
 
         // startTime = 1518651000; // new Date("Feb 14 2018 23:30:00 GMT").getTime() / 1000;
         startTime = now; // for testing we use now
-        endTime = startTime + 100 days; // ICO end on Apr 30 2018 00:00:00 GMT
+        endTime = startTime + 75 days;
     }
 
     // fallback function can be used to buy tokens

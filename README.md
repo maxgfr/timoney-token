@@ -8,6 +8,12 @@ Install node library
 npm install
 ```
 
+Launch testrpc
+
+```
+testrpc
+```
+
 Use truffle to compile/migrate/test
 
 ```
