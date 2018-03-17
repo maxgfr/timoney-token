@@ -10,7 +10,7 @@ module.exports = function(deployer) {
 	//wallet where ether is deposited
 	//var multiSigWallet = web3.eth.accounts[1]; // change to multisig wallet address when deployed
     // ledger first address
-  var multiSigWallet = "0x7ac54982DCb42fB21b9eEc4eEA69Fa5bFF730376";
+  	var multiSigWallet = "0x7ac54982DCb42fB21b9eEc4eEA69Fa5bFF730376";
 
 	// reserve wallet where 35% of tokens are deposited second ledger address
 	var reserveWallet = "0x2Df02bb8cB3709851d72FEbE917b09DB35800D62";
@@ -54,6 +54,6 @@ module.exports = function(deployer) {
   				});
   			});
   		});
-		});
+	});
 
 };

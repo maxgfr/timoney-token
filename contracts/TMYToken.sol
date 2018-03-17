@@ -1,5 +1,4 @@
-//ERC20 Token
-pragma solidity 0.4.15;
+pragma solidity ^0.4.18;
 
 import './BurnableToken.sol';
 import './Ownable.sol';
@@ -12,7 +11,7 @@ contract TMYToken is BurnableToken, Ownable {
     uint256 public constant initialSupply = 900000000 * (10 ** uint256(decimals));
 
     // Constructor
-    function CJToken() {
+    function TMYToken() {
         totalSupply = initialSupply;
         balances[msg.sender] = initialSupply; // Send all tokens to owner
     }
