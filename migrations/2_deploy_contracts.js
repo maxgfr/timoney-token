@@ -1,19 +1,16 @@
 var TMYToken = artifacts.require("./TMYToken.sol");
 var Crowdsale = artifacts.require("./Crowdsale.sol");
 
-console.log('test jonjonjonjon');
-
-
 module.exports = function(deployer) {
-	var owner = "0xd2d767C63021500efDae9Edc51362A892D042e77";
+	var owner = "0x36720d66eace008d94e0d4c03229bca309e0b7d2";
 	console.log("Owner address: " + owner);
 	//wallet where ether is deposited
 	//var multiSigWallet = web3.eth.accounts[1]; // change to multisig wallet address when deployed
     // ledger first address
-  	var multiSigWallet = "0x7ac54982DCb42fB21b9eEc4eEA69Fa5bFF730376";
+  	var multiSigWallet = "0x2118c9a3887d4f3bbbd130003c378b0d4b471c63";
 
 	// reserve wallet where 35% of tokens are deposited second ledger address
-	var reserveWallet = "0x2Df02bb8cB3709851d72FEbE917b09DB35800D62";
+	var reserveWallet = "0x7143b3f223de4f86f5b2b9a00b3b7b9b85ef43a3";
 
 	// Amount of token to transfer to crowdsale contract
 	var totalSupply       = 300000000,
